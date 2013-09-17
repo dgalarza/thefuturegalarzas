@@ -1,0 +1,653 @@
+/* line 17, ../../../../../../../Users/dgalarza/.rvm/gems/ruby-2.0.0-p195@thefuturegalarzas/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Users/dgalarza/.rvm/gems/ruby-2.0.0-p195@thefuturegalarzas/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Users/dgalarza/.rvm/gems/ruby-2.0.0-p195@thefuturegalarzas/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Users/dgalarza/.rvm/gems/ruby-2.0.0-p195@thefuturegalarzas/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Users/dgalarza/.rvm/gems/ruby-2.0.0-p195@thefuturegalarzas/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Users/dgalarza/.rvm/gems/ruby-2.0.0-p195@thefuturegalarzas/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Users/dgalarza/.rvm/gems/ruby-2.0.0-p195@thefuturegalarzas/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Users/dgalarza/.rvm/gems/ruby-2.0.0-p195@thefuturegalarzas/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Users/dgalarza/.rvm/gems/ruby-2.0.0-p195@thefuturegalarzas/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*
+ * jQuery FlexSlider v2.2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+/* Browser Resets
+*********************************/
+/* line 18, ../sass/_flexslider.scss */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus {
+  outline: none;
+}
+
+/* line 21, ../sass/_flexslider.scss */
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Icon Fonts
+*********************************/
+/* Font-face Icons */
+@font-face {
+  font-family: 'flexslider-icon';
+  src: url("fonts/flexslider-icon.eot");
+  src: url("fonts/flexslider-icon.eot?#iefix") format("embedded-opentype"), url("fonts/flexslider-icon.woff") format("woff"), url("fonts/flexslider-icon.ttf") format("truetype"), url("fonts/flexslider-icon.svg#flexslider-icon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* FlexSlider Necessary Styles
+*********************************/
+/* line 39, ../sass/_flexslider.scss */
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 40, ../sass/_flexslider.scss */
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+/* line 41, ../sass/_flexslider.scss */
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+
+/* line 42, ../sass/_flexslider.scss */
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+
+/* Clearfix for the .slides element */
+/* line 45, ../sass/_flexslider.scss */
+.slides:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 46, ../sass/_flexslider.scss */
+html[xmlns] .slides {
+  display: block;
+}
+
+/* line 47, ../sass/_flexslider.scss */
+* html .slides {
+  height: 1%;
+}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+/* line 52, ../sass/_flexslider.scss */
+.no-js .slides > li:first-child {
+  display: block;
+}
+
+/* FlexSlider Default Theme
+*********************************/
+/* line 56, ../sass/_flexslider.scss */
+.flexslider {
+  margin: 0 0 60px;
+  background: #fff;
+  border: 4px solid #fff;
+  position: relative;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  zoom: 1;
+}
+
+/* line 57, ../sass/_flexslider.scss */
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* line 58, ../sass/_flexslider.scss */
+.loading .flex-viewport {
+  max-height: 300px;
+}
+
+/* line 59, ../sass/_flexslider.scss */
+.flexslider .slides {
+  zoom: 1;
+}
+
+/* line 60, ../sass/_flexslider.scss */
+.carousel li {
+  margin-right: 5px;
+}
+
+/* Direction Nav */
+/* line 63, ../sass/_flexslider.scss */
+.flex-direction-nav {
+  *height: 0;
+}
+
+/* line 64, ../sass/_flexslider.scss */
+.flex-direction-nav a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 0;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+/* line 65, ../sass/_flexslider.scss */
+.flex-direction-nav .flex-prev {
+  left: -50px;
+}
+
+/* line 66, ../sass/_flexslider.scss */
+.flex-direction-nav .flex-next {
+  right: -50px;
+  text-align: right;
+}
+
+/* line 67, ../sass/_flexslider.scss */
+.flexslider:hover .flex-prev {
+  opacity: 0.7;
+  left: 10px;
+}
+
+/* line 68, ../sass/_flexslider.scss */
+.flexslider:hover .flex-next {
+  opacity: 0.7;
+  right: 10px;
+}
+
+/* line 69, ../sass/_flexslider.scss */
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
+  opacity: 1;
+}
+
+/* line 70, ../sass/_flexslider.scss */
+.flex-direction-nav .flex-disabled {
+  opacity: 0 !important;
+  filter: alpha(opacity=0);
+  cursor: default;
+}
+
+/* line 71, ../sass/_flexslider.scss */
+.flex-direction-nav a:before {
+  font-family: "flexslider-icon";
+  font-size: 40px;
+  display: inline-block;
+  content: '\f001';
+}
+
+/* line 72, ../sass/_flexslider.scss */
+.flex-direction-nav a.flex-next:before {
+  content: '\f002';
+}
+
+/* Pause/Play */
+/* line 75, ../sass/_flexslider.scss */
+.flex-pauseplay a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  opacity: 0.8;
+  z-index: 10;
+  overflow: hidden;
+  cursor: pointer;
+  color: #000;
+}
+
+/* line 76, ../sass/_flexslider.scss */
+.flex-pauseplay a:before {
+  font-family: "flexslider-icon";
+  font-size: 20px;
+  display: inline-block;
+  content: '\f004';
+}
+
+/* line 77, ../sass/_flexslider.scss */
+.flex-pauseplay a:hover {
+  opacity: 1;
+}
+
+/* line 78, ../sass/_flexslider.scss */
+.flex-pauseplay a.flex-play:before {
+  content: '\f003';
+}
+
+/* Control Nav */
+/* line 81, ../sass/_flexslider.scss */
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  text-align: center;
+}
+
+/* line 82, ../sass/_flexslider.scss */
+.flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+/* line 83, ../sass/_flexslider.scss */
+.flex-control-paging li a {
+  width: 11px;
+  height: 11px;
+  display: block;
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+/* line 84, ../sass/_flexslider.scss */
+.flex-control-paging li a:hover {
+  background: #333;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* line 85, ../sass/_flexslider.scss */
+.flex-control-paging li a.flex-active {
+  background: #000;
+  background: rgba(0, 0, 0, 0.9);
+  cursor: default;
+}
+
+/* line 87, ../sass/_flexslider.scss */
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden;
+}
+
+/* line 88, ../sass/_flexslider.scss */
+.flex-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0;
+}
+
+/* line 89, ../sass/_flexslider.scss */
+.flex-control-thumbs img {
+  width: 100%;
+  display: block;
+  opacity: .7;
+  cursor: pointer;
+}
+
+/* line 90, ../sass/_flexslider.scss */
+.flex-control-thumbs img:hover {
+  opacity: 1;
+}
+
+/* line 91, ../sass/_flexslider.scss */
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default;
+}
+
+@media screen and (max-width: 860px) {
+  /* line 94, ../sass/_flexslider.scss */
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 10px;
+  }
+
+  /* line 95, ../sass/_flexslider.scss */
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 10px;
+  }
+}
+/* line 11, ../sass/styles.scss */
+html, body {
+  line-height: normal;
+}
+
+/* line 15, ../sass/styles.scss */
+#page {
+  width: 100%;
+}
+
+@font-face {
+  font-family: 'janda_stylish_scriptregular';
+  src: url("/fonts/jandastylishscript-webfont.eot");
+  src: url("/fonts/jandastylishscript-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/jandastylishscript-webfont.woff") format("woff"), url("/fonts/jandastylishscript-webfont.ttf") format("truetype"), url("/fonts/jandastylishscript-webfont.svg#janda_stylish_scriptregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ostrich_sans_roundedmedium';
+  src: url("/fonts/ostrichsansrounded-medium-webfont.eot");
+  src: url("/fonts/ostrichsansrounded-medium-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/ostrichsansrounded-medium-webfont.woff") format("woff"), url("/fonts/ostrichsansrounded-medium-webfont.ttf") format("truetype"), url("/fonts/ostrichsansrounded-medium-webfont.svg#ostrich_sans_roundedmedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 41, ../sass/styles.scss */
+h1 {
+  font-family: 'janda_stylish_scriptregular';
+  color: #5e5e5e;
+  font-size: 109px;
+  font-size: 6.8125rem;
+}
+
+/* line 47, ../sass/styles.scss */
+h2 {
+  color: #fe5e5e;
+  font-family: 'janda_stylish_scriptregular';
+  font-size: 48px;
+  font-size: 3rem;
+}
+
+/* line 53, ../sass/styles.scss */
+h3 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-family: "adobe-caslon-pro",serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 61, ../sass/styles.scss */
+body {
+  background: url(/images/backgrounds/clouds_pattern.png);
+  color: #5e5e5e;
+  font-family: "adobe-caslon-pro",serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* line 69, ../sass/styles.scss */
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+/* line 77, ../sass/styles.scss */
+.icon-heart {
+  background: url(/images/icons/heart.png) 0 0 no-repeat;
+  display: inline-block;
+  width: 27px;
+  height: 24px;
+}
+
+/* line 84, ../sass/styles.scss */
+section {
+  background: #f9f9f9;
+}
+/* line 88, ../sass/styles.scss */
+section .wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 94, ../sass/styles.scss */
+section .bg-image {
+  overflow: hidden;
+  width: 100%;
+  background: #f9f9f9;
+}
+/* line 98, ../sass/styles.scss */
+section .bg-image .image-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+}
+/* line 105, ../sass/styles.scss */
+section .slideshow {
+  margin: 0 auto;
+  width: 100%;
+  height: 930px;
+  max-width: 1400px;
+}
+/* line 106, ../sass/styles.scss */
+section .slideshow .flex-viewport {
+  height: 930px;
+  overflow: visible !important;
+}
+/* line 115, ../sass/styles.scss */
+section .slideshow img {
+  width: 100%;
+  max-width: 1400px;
+}
+/* line 120, ../sass/styles.scss */
+section .slideshow li {
+  opacity: 0.5;
+  -webkit-transition: opacity 1s linear;
+  -webkit-transition-delay: 0;
+  -moz-transition: opacity 1s linear 0;
+  -o-transition: opacity 1s linear 0;
+  transition: opacity 1s linear 0;
+}
+/* line 125, ../sass/styles.scss */
+section .slideshow .flex-active-slide {
+  opacity: 1;
+}
+/* line 130, ../sass/styles.scss */
+section .bg-map {
+  margin: 0 auto;
+  width: 100%;
+  height: 600px;
+}
+/* line 136, ../sass/styles.scss */
+section .address {
+  margin: 15px 0;
+  text-transform: uppercase;
+  line-height: 1.4;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+/* line 143, ../sass/styles.scss */
+section p {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+/* line 150, ../sass/styles.scss */
+.content-section .wrapper {
+  padding: 100px 0;
+}
+/* line 154, ../sass/styles.scss */
+.content-section .details p + p {
+  margin-top: 40px;
+}
+/* line 158, ../sass/styles.scss */
+.content-section .details {
+  margin-top: 60px;
+}
+
+/* line 163, ../sass/styles.scss */
+section#intro {
+  padding-top: 120px;
+  background: transparent;
+}
+/* line 167, ../sass/styles.scss */
+section#intro .icon-heart {
+  position: relative;
+  top: -37px;
+}
+/* line 172, ../sass/styles.scss */
+section#intro nav {
+  padding: 40px 0;
+  background: #f9f9f9;
+  overflow: hidden;
+}
+/* line 177, ../sass/styles.scss */
+section#intro nav a, section#intro nav a:visited, section#intro nav a:active, section#intro nav a:hover {
+  text-decoration: none;
+  color: #5e5e5e;
+  -webkit-transition: color 0.25s linear;
+  -webkit-transition-delay: 0s;
+  -moz-transition: color 0.25s linear 0s;
+  -o-transition: color 0.25s linear 0s;
+  transition: color 0.25s linear 0s;
+}
+/* line 183, ../sass/styles.scss */
+section#intro nav a:hover {
+  color: #fe5e5e;
+}
+/* line 187, ../sass/styles.scss */
+section#intro nav li {
+  padding: 0 34px;
+  float: left;
+  font-family: 'ostrich_sans_roundedmedium';
+  text-transform: uppercase;
+  line-height: 82px;
+  font-size: 35px;
+  font-size: 2.1875rem;
+}
+/* line 196, ../sass/styles.scss */
+section#intro nav .date {
+  font-size: 82px;
+  font-size: 5.125rem;
+}
+/* line 201, ../sass/styles.scss */
+section#intro .subheadline {
+  color: #fe5e5e;
+  font-size: 36px;
+  font-size: 2.25rem;
+}
+/* line 206, ../sass/styles.scss */
+section#intro .bg-image .image-container {
+  height: 1044px;
+  background: #f9f9f9 url(/images/backgrounds/dg_erin_hoboken.jpg) no-repeat center center;
+}
+
+/* line 213, ../sass/styles.scss */
+section#venue .bg-image .image-container {
+  height: 500px;
+  background: #f9f9f9 url(/images/backgrounds/venue.jpg) no-repeat center center;
+}
+
+/* line 220, ../sass/styles.scss */
+section#hotel .bg-image .image-container {
+  height: 499px;
+  background: #f9f9f9 url(/images/backgrounds/marriot.jpg) no-repeat center center;
+}
+
+/* line 226, ../sass/styles.scss */
+.flexslider.carousel .slides li {
+  max-width: 1400px;
+}
+
+/* line 230, ../sass/styles.scss */
+.flexslider.carousel .slides li img {
+  display: block;
+  height: 1044px;
+}
+
+/* line 236, ../sass/styles.scss */
+.flex-direction-nav,
+.flex-control-nav {
+  display: none;
+}

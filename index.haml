@@ -1,0 +1,118 @@
+!!!
+%html
+  %head
+    %title Damian and Erin are getting married
+
+    %link{ rel: 'stylesheet', href: '/css/styles.css', media: 'all', type: 'text/css' }
+
+    <script type="text/javascript" src="//use.typekit.net/kpl4mcv.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  %body
+
+    #page
+
+      %section#intro
+        .wrapper
+          %h1 
+            Damian
+            %i.icon-heart
+            Erin
+          %p.subheadline are getting married!
+
+        %nav
+          .wrapper.clearfix
+            %ul
+              %li
+                %a{ href: '#venue' } When / Where
+              %li
+                %a{ href: '#hotel' } Hotel
+              %li.date
+                May 31, 2014
+              %li
+                %a{ href: '#registry' } Registry
+              %li
+                %a{ href: '#contact' } Say Hi
+
+        .bg-image
+          .slideshow
+            %ul.slides
+              %li 
+                %img{ src: '/images/gallery/DSC_0358.jpg' }
+              %li 
+                %img{ src: '/images/gallery/DSC_0754.jpg' }
+              %li 
+                %img{ src: '/images/gallery/341444_10100791928595549_936508567_o.jpg' }
+
+
+      %section#venue.content-section
+        %a{ name: 'venue' }
+        .wrapper
+          %h2 Nanina's in the Park
+          .address
+            %p 540 Mill Street
+            %p Belleville, NJ 07109
+
+          %p
+            Ceremony
+            %time 11:30am
+            | Reception
+            %time 12-5pm
+
+        .bg-map
+      %section#hotel.content-section
+        %a{ name: 'hotel' }
+        .wrapper
+          %h2 Saddle Brook Marriot
+          .address
+            %p 138 New Pehlle Ave
+            %p Saddle Brook, NJ 07663
+
+          .details
+            %h3 Details
+            %p 
+              The hotel rate is about $136.85 per night (your card will not be charged until you check-out.) 
+              Any guests from out of town or just planning on staying at the hotel for more than Saturday night, 
+              we have secured the rate above Thursday and Friday nights. as well. 
+
+            %p The amount of rooms in the room block is limited, to ensure you can reserve the room of your choice and for the above rate please make reservations before May 9, 2014.
+
+          .details
+            %h3 Reservations
+            %p Please call Marriott Reservations directly at 1 (800) 832-6254 or (201) 843-9500
+            %p Please be sure to tell the hotel you are part of the Bermudez/Galarza wedding group staying at the Saddle Brook Marriott, located at 138 New Pehle Avenue, Saddle Brook, NJ 07663. 
+        .bg-image
+          .image-container
+
+      %section#shuttles.content-section
+        .wrapper
+          %h2 Shuttles
+          %p We will be having shuttle pick up friends and family staying at the hotel in the morning before the ceremony to Nanina’s in the Park and after the reception back to the Mariott. 
+
+          .details
+
+            %h3 Shuttle Schedule
+            %p 
+              There is a limited number of seats on the shuttle, we will need to do two trips so it would be helpful if everyone could please arrive for the shuttles at 
+              %time 10:00am. 
+              This will ensure everyone arrives on time.
+        .bg-map
+
+      %section#registry.content-section
+        %a{ name: 'registry' }
+        .wrapper
+          %h2 Registry
+
+      %section#contact.content-section
+        %a{ name: 'contact' }
+        .wrapper
+          %h2 Say Hi
+          %p 
+            If you have any questions or just want to say hello, you can reach us at 
+            damiananderin[at]gmail.com. We would love to hear from you. 
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBn7TK9lc1hszaTDUWN6X_M2G9EjDJm-1A&sensor=true"></script> 
+    <script type="text/javascript" src="/scripts/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/scripts/application.js"></script>
