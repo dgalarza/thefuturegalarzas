@@ -14,6 +14,7 @@ html, body {
 
 #page {
   width: 100%;
+  padding-bottom: 200px;
 }
 
 @font-face {
@@ -104,13 +105,11 @@ section {
 
   .slideshow {
     .flex-viewport {
-      height: 930px;
       overflow: visible !important;
     }
     margin: 0 auto;
     width: 100%;
-    height: 930px;
-    max-width: 1400px;
+    max-width: 1024px;
 
     img {
       width: 100%;
@@ -118,6 +117,7 @@ section {
     }
 
     li {
+      height: 681px;
       opacity: 0.5;
       @include transition(opacity 1s linear 0);
     }
@@ -130,25 +130,29 @@ section {
   .bg-map {
     margin: 0 auto;
     width: 100%;
-    height: 600px;
+    height: 480px;
   }
 
   .address {
     margin: 15px 0;
     text-transform: uppercase;
     line-height: 1.4;
-    @include font_size(24);
+    @include font_size(22);
   }
 
   p {
-    @include font_size(24);
+    @include font_size(22);
   }
 
 }
 
+section:last-child {
+  border-bottom: 1px solid #cdcdcd;
+}
+
 .content-section {
   .wrapper {
-    padding: 100px 0;
+    padding: 75px 0;
   }
 
   .details p + p {
@@ -163,6 +167,15 @@ section {
 section#intro {
   padding-top: 120px;
   background: transparent;
+
+  h1 {
+    position: relative;
+    top: 38px;
+  }
+
+  .intro-wrapper {
+    text-align: center;
+  }
 
   .icon-heart {
     position: relative;
@@ -201,6 +214,9 @@ section#intro {
   .subheadline {
     color: $pink;
     @include font_size(36);
+    background: url(/images/backgrounds/text-wrapper.png) center 0 repeat;
+    position: relative;
+    top: 18px;
   }
 
   .bg-image .image-container {
@@ -223,6 +239,28 @@ section#hotel {
   }
 }
 
+.registry-wrapper {
+  margin-top: 20px;
+  a {
+    display: inline-block;
+    margin: 0 20px;
+  }
+}
+
+section#contact {
+  p {
+    padding: 0 50px;
+  }
+
+  h2 {
+    margin-bottom: 50px;
+  }
+}
+
+/**
+ * Flex overrides
+ *
+ */
 .flexslider.carousel .slides li {
   max-width: 1400px;
 }

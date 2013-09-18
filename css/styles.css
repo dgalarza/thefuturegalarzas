@@ -411,6 +411,7 @@ html, body {
 /* line 15, ../sass/styles.scss */
 #page {
   width: 100%;
+  padding-bottom: 200px;
 }
 
 @font-face {
@@ -429,7 +430,7 @@ html, body {
   font-style: normal;
 }
 
-/* line 41, ../sass/styles.scss */
+/* line 42, ../sass/styles.scss */
 h1 {
   font-family: 'janda_stylish_scriptregular';
   color: #5e5e5e;
@@ -437,7 +438,7 @@ h1 {
   font-size: 6.8125rem;
 }
 
-/* line 47, ../sass/styles.scss */
+/* line 48, ../sass/styles.scss */
 h2 {
   color: #fe5e5e;
   font-family: 'janda_stylish_scriptregular';
@@ -445,7 +446,7 @@ h2 {
   font-size: 3rem;
 }
 
-/* line 53, ../sass/styles.scss */
+/* line 54, ../sass/styles.scss */
 h3 {
   font-size: 24px;
   font-size: 1.5rem;
@@ -455,7 +456,7 @@ h3 {
   text-transform: uppercase;
 }
 
-/* line 61, ../sass/styles.scss */
+/* line 62, ../sass/styles.scss */
 body {
   background: url(/images/backgrounds/clouds_pattern.png);
   color: #5e5e5e;
@@ -464,7 +465,7 @@ body {
   font-weight: 400;
 }
 
-/* line 69, ../sass/styles.scss */
+/* line 70, ../sass/styles.scss */
 .clearfix:after {
   content: " ";
   visibility: hidden;
@@ -473,7 +474,7 @@ body {
   clear: both;
 }
 
-/* line 77, ../sass/styles.scss */
+/* line 78, ../sass/styles.scss */
 .icon-heart {
   background: url(/images/icons/heart.png) 0 0 no-repeat;
   display: inline-block;
@@ -481,47 +482,46 @@ body {
   height: 24px;
 }
 
-/* line 84, ../sass/styles.scss */
+/* line 85, ../sass/styles.scss */
 section {
   background: #f9f9f9;
 }
-/* line 88, ../sass/styles.scss */
+/* line 89, ../sass/styles.scss */
 section .wrapper {
   width: 1000px;
   margin: 0 auto;
   text-align: center;
 }
-/* line 94, ../sass/styles.scss */
+/* line 95, ../sass/styles.scss */
 section .bg-image {
   overflow: hidden;
   width: 100%;
   background: #f9f9f9;
 }
-/* line 98, ../sass/styles.scss */
+/* line 99, ../sass/styles.scss */
 section .bg-image .image-container {
   margin: 0 auto;
   width: 100%;
   max-width: 1400px;
 }
-/* line 105, ../sass/styles.scss */
+/* line 106, ../sass/styles.scss */
 section .slideshow {
   margin: 0 auto;
   width: 100%;
-  height: 930px;
-  max-width: 1400px;
+  max-width: 1024px;
 }
-/* line 106, ../sass/styles.scss */
+/* line 107, ../sass/styles.scss */
 section .slideshow .flex-viewport {
-  height: 930px;
   overflow: visible !important;
 }
-/* line 115, ../sass/styles.scss */
+/* line 114, ../sass/styles.scss */
 section .slideshow img {
   width: 100%;
   max-width: 1400px;
 }
-/* line 120, ../sass/styles.scss */
+/* line 119, ../sass/styles.scss */
 section .slideshow li {
+  height: 681px;
   opacity: 0.5;
   -webkit-transition: opacity 1s linear;
   -webkit-transition-delay: 0;
@@ -537,52 +537,66 @@ section .slideshow .flex-active-slide {
 section .bg-map {
   margin: 0 auto;
   width: 100%;
-  height: 600px;
+  height: 480px;
 }
 /* line 136, ../sass/styles.scss */
 section .address {
   margin: 15px 0;
   text-transform: uppercase;
   line-height: 1.4;
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 22px;
+  font-size: 1.375rem;
 }
 /* line 143, ../sass/styles.scss */
 section p {
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 22px;
+  font-size: 1.375rem;
 }
 
-/* line 150, ../sass/styles.scss */
-.content-section .wrapper {
-  padding: 100px 0;
+/* line 149, ../sass/styles.scss */
+section:last-child {
+  border-bottom: 1px solid #cdcdcd;
 }
+
 /* line 154, ../sass/styles.scss */
+.content-section .wrapper {
+  padding: 75px 0;
+}
+/* line 158, ../sass/styles.scss */
 .content-section .details p + p {
   margin-top: 40px;
 }
-/* line 158, ../sass/styles.scss */
+/* line 162, ../sass/styles.scss */
 .content-section .details {
   margin-top: 60px;
 }
 
-/* line 163, ../sass/styles.scss */
+/* line 167, ../sass/styles.scss */
 section#intro {
   padding-top: 120px;
   background: transparent;
 }
-/* line 167, ../sass/styles.scss */
+/* line 171, ../sass/styles.scss */
+section#intro h1 {
+  position: relative;
+  top: 38px;
+}
+/* line 176, ../sass/styles.scss */
+section#intro .intro-wrapper {
+  text-align: center;
+}
+/* line 180, ../sass/styles.scss */
 section#intro .icon-heart {
   position: relative;
   top: -37px;
 }
-/* line 172, ../sass/styles.scss */
+/* line 185, ../sass/styles.scss */
 section#intro nav {
   padding: 40px 0;
   background: #f9f9f9;
   overflow: hidden;
 }
-/* line 177, ../sass/styles.scss */
+/* line 190, ../sass/styles.scss */
 section#intro nav a, section#intro nav a:visited, section#intro nav a:active, section#intro nav a:hover {
   text-decoration: none;
   color: #5e5e5e;
@@ -592,11 +606,11 @@ section#intro nav a, section#intro nav a:visited, section#intro nav a:active, se
   -o-transition: color 0.25s linear 0s;
   transition: color 0.25s linear 0s;
 }
-/* line 183, ../sass/styles.scss */
+/* line 196, ../sass/styles.scss */
 section#intro nav a:hover {
   color: #fe5e5e;
 }
-/* line 187, ../sass/styles.scss */
+/* line 200, ../sass/styles.scss */
 section#intro nav li {
   padding: 0 34px;
   float: left;
@@ -606,47 +620,73 @@ section#intro nav li {
   font-size: 35px;
   font-size: 2.1875rem;
 }
-/* line 196, ../sass/styles.scss */
+/* line 209, ../sass/styles.scss */
 section#intro nav .date {
   font-size: 82px;
   font-size: 5.125rem;
 }
-/* line 201, ../sass/styles.scss */
+/* line 214, ../sass/styles.scss */
 section#intro .subheadline {
   color: #fe5e5e;
   font-size: 36px;
   font-size: 2.25rem;
+  background: url(/images/backgrounds/text-wrapper.png) center 0 repeat;
+  position: relative;
+  top: 18px;
 }
-/* line 206, ../sass/styles.scss */
+/* line 222, ../sass/styles.scss */
 section#intro .bg-image .image-container {
   height: 1044px;
   background: #f9f9f9 url(/images/backgrounds/dg_erin_hoboken.jpg) no-repeat center center;
 }
 
-/* line 213, ../sass/styles.scss */
+/* line 229, ../sass/styles.scss */
 section#venue .bg-image .image-container {
   height: 500px;
   background: #f9f9f9 url(/images/backgrounds/venue.jpg) no-repeat center center;
 }
 
-/* line 220, ../sass/styles.scss */
+/* line 236, ../sass/styles.scss */
 section#hotel .bg-image .image-container {
   height: 499px;
   background: #f9f9f9 url(/images/backgrounds/marriot.jpg) no-repeat center center;
 }
 
-/* line 226, ../sass/styles.scss */
+/* line 242, ../sass/styles.scss */
+.registry-wrapper {
+  margin-top: 20px;
+}
+/* line 244, ../sass/styles.scss */
+.registry-wrapper a {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+/* line 251, ../sass/styles.scss */
+section#contact p {
+  padding: 0 50px;
+}
+/* line 255, ../sass/styles.scss */
+section#contact h2 {
+  margin-bottom: 50px;
+}
+
+/**
+ * Flex overrides
+ *
+ */
+/* line 264, ../sass/styles.scss */
 .flexslider.carousel .slides li {
   max-width: 1400px;
 }
 
-/* line 230, ../sass/styles.scss */
+/* line 268, ../sass/styles.scss */
 .flexslider.carousel .slides li img {
   display: block;
   height: 1044px;
 }
 
-/* line 236, ../sass/styles.scss */
+/* line 274, ../sass/styles.scss */
 .flex-direction-nav,
 .flex-control-nav {
   display: none;

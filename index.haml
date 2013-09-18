@@ -13,7 +13,7 @@
     #page
 
       %section#intro
-        .wrapper
+        .intro-wrapper
           %h1 
             Damian
             %i.icon-heart
@@ -102,6 +102,12 @@
         %a{ name: 'registry' }
         .wrapper
           %h2 Registry
+
+          .registry-wrapper
+            %a{ href: 'http://www.macys/com', title: "Macy's", target: '_blank' }
+              %img{ src: '/images/macys.png', alt: "Macy's" }
+            %a{ href: 'http://www.bedbathandbeyond.com', title: "Bed Bath and Beyond", target: '_blank' }
+              %img{ src: '/images/bbandb.png', alt: 'Bed Bath and Beyond' }
 
       %section#contact.content-section
         %a{ name: 'contact' }
