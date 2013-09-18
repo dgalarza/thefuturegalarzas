@@ -1,0 +1,181 @@
+.icon-heart {
+  background: url(/images/icons/heart.png) 0 0 no-repeat;
+  display: inline-block;
+  width: 27px;
+  height: 24px;
+}
+
+section {
+
+  background: $background_white;
+
+  .wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .bg-image {
+    overflow: hidden;
+    width: 100%;
+    background: $background_white;
+    .image-container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1400px;
+    }
+  }
+
+  .slideshow {
+    .flex-viewport {
+      overflow: visible !important;
+    }
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+
+    img {
+      width: 100%;
+      max-width: 1400px;
+    }
+
+    li {
+      height: 681px;
+      opacity: 0.5;
+      @include transition(opacity 1s linear 0);
+    }
+
+    .flex-active-slide {
+      opacity: 1;
+    }
+  }
+
+  .bg-map {
+    margin: 0 auto;
+    width: 100%;
+    height: 480px;
+  }
+
+  .address {
+    margin: 15px 0;
+    text-transform: uppercase;
+    line-height: 1.4;
+    @include font_size(22);
+  }
+
+  p {
+    @include font_size(22);
+  }
+
+}
+
+section:last-child {
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.content-section {
+  .wrapper {
+    padding: 75px 0;
+  }
+
+  .details p + p {
+    margin-top: 40px;
+  }
+
+  .details {
+    margin-top: 60px;
+  }
+}
+
+section#intro {
+  padding-top: 120px;
+  background: transparent;
+
+  h1 {
+    position: relative;
+    top: 38px;
+  }
+
+  .intro-wrapper {
+    text-align: center;
+  }
+
+  .icon-heart {
+    position: relative;
+    top: -37px;
+  }
+
+  nav {
+    padding: 40px 0;
+    background: $background_white;
+    overflow: hidden;
+
+    a, a:visited, a:active, a:hover {
+      text-decoration: none;
+      color: $headline_gray;
+      @include transition(color 0.25s linear 0s);
+    }
+
+    a:hover {
+      color: $pink;
+    }
+
+    li {
+      padding: 0 25px;
+      float: left;
+      font-family: 'ostrich_sans_roundedmedium';
+      text-transform: uppercase;
+      line-height: 82px;
+      @include font_size(35);
+    }
+
+    .date {
+      @include font_size(92);
+    }
+  }
+
+  .subheadline {
+    color: $pink;
+    @include font_size(36);
+    background: url(/images/backgrounds/text-wrapper.png) center 0 repeat;
+    position: relative;
+    top: 18px;
+  }
+
+  .bg-image .image-container {
+    height: 1044px;
+    background: $background_white url(/images/backgrounds/dg_erin_hoboken.jpg) no-repeat center center;
+  }
+}
+
+section#venue {
+  .bg-image .image-container {
+    height: 500px;
+    background: $background_white url(/images/backgrounds/venue.jpg) no-repeat center center;
+  }
+}
+
+section#hotel {
+  .bg-image .image-container {
+    height: 499px;
+    background: $background_white url(/images/backgrounds/marriot.jpg) no-repeat center center;
+  }
+}
+
+.registry-wrapper {
+  margin-top: 20px;
+  a {
+    display: inline-block;
+    margin: 0 20px;
+  }
+}
+
+section#contact {
+  p {
+    padding: 0 50px;
+  }
+
+  h2 {
+    margin-bottom: 50px;
+  }
+}

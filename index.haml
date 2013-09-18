@@ -2,6 +2,7 @@
 %html
   %head
     %title Damian and Erin are getting married
+    %meta{ name: 'viewport', content: 'width=1000px' }
 
     %link{ rel: 'stylesheet', href: '/css/styles.css', media: 'all', type: 'text/css' }
 
@@ -20,11 +21,11 @@
             Erin
           %p.subheadline are getting married!
 
-        %nav
+        %nav.hidden-mobile
           .wrapper.clearfix
             %ul
               %li
-                %a{ href: '#venue' } When / Where
+                %a{ href: '#venue' } When &amp; Where
               %li
                 %a{ href: '#hotel' } Hotel
               %li.date
@@ -32,6 +33,20 @@
               %li
                 %a{ href: '#registry' } Registry
               %li
+                %a{ href: '#contact' } Say Hi
+
+        %nav.mobile-only
+          .wrapper.clearfix
+            %ul
+              %li.date
+                May 31, 2014
+              %li.menu-item
+                %a{ href: '#venue' } When &amp; Where
+              %li.menu-item
+                %a{ href: '#hotel' } Hotel
+              %li.menu-item
+                %a{ href: '#registry' } Registry
+              %li.menu-item
                 %a{ href: '#contact' } Say Hi
 
         .bg-image

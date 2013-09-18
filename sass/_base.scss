@@ -1,0 +1,76 @@
+$background_white: #F9F9F9;
+$headline_gray: #5e5e5e;
+$pink: #fe5e5e;
+
+html, body {
+  line-height: normal;
+  font-size: 100%;
+}
+
+#page {
+  width: 100%;
+  padding-bottom: 200px;
+}
+
+@font-face {
+  font-family: 'janda_stylish_scriptregular';
+  src: url('/fonts/jandastylishscript-webfont.eot');
+  src: url('/fonts/jandastylishscript-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/jandastylishscript-webfont.woff') format('woff'),
+       url('/fonts/jandastylishscript-webfont.ttf') format('truetype'),
+       url('/fonts/jandastylishscript-webfont.svg#janda_stylish_scriptregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ostrich_sans_roundedmedium';
+  src: url('/fonts/ostrichsansrounded-medium-webfont.eot');
+  src: url('/fonts/ostrichsansrounded-medium-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/ostrichsansrounded-medium-webfont.woff') format('woff'),
+       url('/fonts/ostrichsansrounded-medium-webfont.ttf') format('truetype'),
+       url('/fonts/ostrichsansrounded-medium-webfont.svg#ostrich_sans_roundedmedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'janda_stylish_scriptregular';
+  color: $headline_gray;
+  @include font_size(109);
+}
+
+h2 {
+  color: $pink;
+  font-family: 'janda_stylish_scriptregular';
+  @include font_size(48);
+}
+
+h3 {
+  @include font_size(24);
+  font-family: "museo",serif;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+body {
+  background: url(/images/backgrounds/clouds_pattern.png);
+  color: $headline_gray;
+  font-family: "museo",serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+::selection {
+  background-color: $pink;
+  color: #FFFFFF;
+}

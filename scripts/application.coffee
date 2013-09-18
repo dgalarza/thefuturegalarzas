@@ -71,3 +71,5 @@ $('nav').on 'click', 'a', (e) ->
   $('html,body').animate({scrollTop: anchor.offset().top},'slow')
 
   e.preventDefault()
+
+window.scrollTo(0, 1)

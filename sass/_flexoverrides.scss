@@ -1,0 +1,17 @@
+/**
+ * Flex overrides
+ *
+ */
+.flexslider.carousel .slides li {
+  max-width: 1400px;
+}
+
+.flexslider.carousel .slides li img {
+  display: block;
+  height: 1044px;
+}
+
+.flex-direction-nav,
+.flex-control-nav {
+  display: none;
+}

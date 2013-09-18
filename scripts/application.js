@@ -93,4 +93,6 @@
     return e.preventDefault();
   });
 
+  window.scrollTo(0, 1);
+
 }).call(this);
