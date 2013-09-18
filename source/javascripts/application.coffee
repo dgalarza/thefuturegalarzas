@@ -1,3 +1,5 @@
+#= require jquery.flexslider
+
 google.maps.visualRefresh = true
 
 # Nanina's
