@@ -6,6 +6,13 @@
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 
+  .icon-heart {
+    background: image-url("icons/heart-mobile.png") 0 0 no-repeat;
+    width: 32px;
+    height: 28px;
+    background-size: 100%;
+  }
+
   section#intro {
 
     nav {
@@ -40,11 +47,11 @@ and (max-device-width : 480px) {
 
     .subheadline {
       @include font_size(65);
-      background: none;
+      background: image-url("backgrounds/text-wrapper-mobile.png") center center repeat-x;
+      background-size: 100%;
     }
 
   }
-
 
   .content-section p {
     padding: 0 50px;

@@ -26,6 +26,7 @@ naninas_map_options =
   zoom: 15
   center: naninas_lat_lng
   mapTypeId: google.maps.MapTypeId.ROADMAP
+  draggable: false
 
 naninas_map = $('#venue .bg-map')
 n_map = new google.maps.Map(naninas_map[0], naninas_map_options)
@@ -36,6 +37,7 @@ hotel_map_options =
   disableDoubleClickZoom: true
   zoom: 15
   mapTypeId: google.maps.MapTypeId.ROADMAP
+  draggable: false
   center: new google.maps.LatLng(naninas.lat, naninas.lng)
 
 hotel_map = $('#shuttles .bg-map')
