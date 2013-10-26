@@ -109,6 +109,14 @@
       %a{ href: 'https://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?registryId=10701864&eventType=Wedding', title: "Bed Bath &amp; Beyond", target: '_blank' }
         %img{ src: '/images/bbandb.png', alt: 'Bed Bath &amp; Beyond' }
 
+%section#gallery.content-section
+  %a{ name: 'gallery' }
+  .gallery_wrapper
+    %h2 Gallery
+    .gallery_images
+      - gallery_photos.each do |photo|
+        = image_tag photo
+
 %section#contact.content-section
   %a{ name: 'contact' }
   .wrapper
