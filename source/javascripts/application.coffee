@@ -1,5 +1,7 @@
 #= require jquery.fancybox
 #= require gallery
+#= require klass.min
+#= require code.photoswipe.jquery-3.0.5
 #= require jquery.flexslider
 
 google.maps.visualRefresh = true
