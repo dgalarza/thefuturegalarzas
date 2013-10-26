@@ -1,3 +1,5 @@
+#= require jquery.fancybox
+#= require gallery
 #= require jquery.flexslider
 
 google.maps.visualRefresh = true

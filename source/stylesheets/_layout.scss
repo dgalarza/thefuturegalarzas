@@ -22,6 +22,10 @@ section {
 
   .gallery_images {
     margin-top: 20px;
+
+    a, a:visited {
+      text-decoration: none;
+    }
   }
 
   .bg-image {

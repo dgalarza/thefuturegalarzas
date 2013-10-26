@@ -115,7 +115,8 @@
     %h2 Gallery
     .gallery_images
       - gallery_photos.each do |photo|
-        = image_tag photo
+        = link_to fullsize_gallery_image(photo), class: 'fancybox', rel: 'engagement-gallery' do
+          = image_tag photo
 
 %section#contact.content-section
   %a{ name: 'contact' }
